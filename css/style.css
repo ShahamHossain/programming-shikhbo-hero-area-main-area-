@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* header start */
+header{}
+/* navigation */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: dodgerblue;
+    background-image: linear-gradient(rgb(12, 69, 126),rgb(149, 183, 218));
+}
+.logo{
+    margin-left: 70px;
+}
+.logo > a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+}
+.logo > a > h2 > span{
+    font-size: 40px;
+    color: goldenrod;
+}
+nav > ul{
+    display: flex;
+    margin-right: 70px;
+}
+nav > ul > li{
+    margin: 0 5px;
+    margin-left: -5px;
+    padding: 20px 0;
+    list-style: none;
+    transition: .5s;
+}
+nav > ul > li:hover{
+    background-color: rgb(24, 45, 65);
+}
+nav > ul > li:first-child{
+    border-left: 1px solid white;
+}
+nav > ul > li > a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+    border-right: 1px solid white;
+    padding: 21px 20px;
+}
+/* dropdown start */
+.dropdown{
+    opacity: 0;
+    visibility: hidden;
+    width: 169px;
+    position: absolute;
+    text-align: center;
+    background-image: linear-gradient(rgb(15, 61, 107), rgb(172, 190, 209));
+    margin-top: 20px;
+    transition: .5s;
+    transform: scaleY(0);
+    transform-origin: top center;
+    box-shadow: 10px 10px 8px black;
+
+}
+.dropdown > li{
+    list-style: none;
+    border-bottom: 1px solid white;
+    padding: 20px 17px;
+    transition: .5s;
+}
+.dropdown > li:hover{
+    background-color: rgb(142, 142, 156);
+}
+.dropdown > li > a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+}
+nav > ul > li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+/* dropdown end */
+/* hero-area start */
+.hero-area{
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.555)), url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+.container{
+    padding-top: 75px;
+}
+.container > h3{
+    margin: 20px auto;
+    width: 200px;
+    font-size: 30px;
+    padding: 15px 20px;
+    background-color: rgba(1, 12, 12, 0.664);
+    border-radius: 10px;
+    color: rgb(194, 189, 189);
+}
+.container > h1{
+    margin: auto;
+    width: 475px;
+    padding: 40px 15px;
+    background-color: rgba(1, 12, 12, 0.664);
+    font-size: 45px;
+    color: rgb(194, 189, 189);
+    border-radius: 10px;
+}
+.container > button{
+    font-size: 25px;
+    background-color: rgba(5, 29, 29, 0.932);
+    padding: 20px 20px;
+    color: rgb(179, 165, 165);
+    border-color:  rgba(5, 29, 29, 0.932);
+    cursor: pointer;
+    border-radius: 20px 5px 20px 5px;
+    transition: .5s;
+}
+.container > button:hover{
+    background-color: rgba(0, 0, 0, 0.568);
+}
+/* hero-area end */
+/* header end */
